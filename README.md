@@ -16,17 +16,6 @@ mvn clean install -P dev
 
 ## How to running Application
 
-java -jar -Ddistance=120 -Drange=30 target\home-test-0.0.1-SNAPSHOT.jar
-
-Output
-```
-CustomerEntity(coordinate=GPSCoordinate(latitude=52.2559432, longitude=-7.1048927), id=9, name=Jack Dempsey)
-CustomerEntity(coordinate=GPSCoordinate(latitude=52.240382, longitude=-6.972413), id=10, name=Georgina Gallagher)
-CustomerEntity(coordinate=GPSCoordinate(latitude=54.180238, longitude=-5.920898), id=17, name=Patricia Cahill)
-CustomerEntity(coordinate=GPSCoordinate(latitude=53.038056, longitude=-7.653889), id=26, name=Stephen McArdle)
-CustomerEntity(coordinate=GPSCoordinate(latitude=53.807778, longitude=-7.714444), id=28, name=Charlie Halligan)
-```
-
 java -jar -Ddistance=100 -Drange=5 target\home-test-0.0.1-SNAPSHOT.jar
 Output
 ```
@@ -41,6 +30,17 @@ CustomerEntity(coordinate=GPSCoordinate(latitude=54.180238, longitude=-5.920898)
 CustomerEntity(coordinate=GPSCoordinate(latitude=53.038056, longitude=-7.653889), id=26, name=Stephen McArdle)
 CustomerEntity(coordinate=GPSCoordinate(latitude=53.807778, longitude=-7.714444), id=28, name=Charlie Halligan)
 ```
+java -jar -Ddistance=120 -Drange=30 target\home-test-0.0.1-SNAPSHOT.jar
+
+Output
+```
+CustomerEntity(coordinate=GPSCoordinate(latitude=52.2559432, longitude=-7.1048927), id=9, name=Jack Dempsey)
+CustomerEntity(coordinate=GPSCoordinate(latitude=52.240382, longitude=-6.972413), id=10, name=Georgina Gallagher)
+CustomerEntity(coordinate=GPSCoordinate(latitude=54.180238, longitude=-5.920898), id=17, name=Patricia Cahill)
+CustomerEntity(coordinate=GPSCoordinate(latitude=53.038056, longitude=-7.653889), id=26, name=Stephen McArdle)
+CustomerEntity(coordinate=GPSCoordinate(latitude=53.807778, longitude=-7.714444), id=28, name=Charlie Halligan)
+```
+
 
 ## VM Argument Meaning
 1. -Ddistance allow flexibility for searching customer from a different distance from office location
